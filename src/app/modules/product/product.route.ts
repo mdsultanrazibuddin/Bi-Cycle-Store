@@ -4,5 +4,6 @@ const router = express.Router()
 
 router.post('/create-product', ProductController.createProduct)
 router.get('/', ProductController. getAllProduct )
+router.get('/:productId', ProductController.getASpecificProduct )
 
 export const ProductRoutes = router
